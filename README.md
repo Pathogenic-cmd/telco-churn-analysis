@@ -1,6 +1,6 @@
 # 📉 Customer Churn Analysis & Prediction
 
-A complete data-driven project to analyze, predict, and visualize customer churn using machine learning and Power BI.
+A complete data-driven project to analyze, predict, and visualize customer churn using machine learning models and Power BI.
 
 ---
 
@@ -44,6 +44,25 @@ This project aims to identify customers who are likely to churn and understand t
 
 ---
 
+## 🧪 Modeling Approach
+
+This project focused on building an effective churn prediction model using **Logistic Regression** as the primary classifier.
+
+To enhance performance and interpretability:
+
+1. A **Decision Tree Classifier** was used for feature selection to reduce noise and highlight the most important features.
+2. **Hyperparameter tuning** was conducted by looping over different values of the inverse regularization strength (`C`) to optimize model performance.
+
+After evaluation, the **finalized Logistic Regression model** was selected based on:
+
+- ✅ Best performance across classification metrics (accuracy, precision, recall)
+- ✅ Strong generalization with the optimized `C` parameter
+- ✅ Clear interpretability for business decision-making
+
+
+> **Final predictions were generated using the Linear Regression model.**
+
+
 ## 📊 Dashboard Features
 
 - KPI Cards: Total customers, churn rate, revenue at risk
@@ -54,7 +73,7 @@ This project aims to identify customers who are likely to churn and understand t
 - Donuts: Churn by services
 
 > 📌 See screenshots in `/visuals` or open the `.pbix` file.
-![Dashboard](visuals/churn_dashboard.png)
+![Dashboard](visuals/dashboard.png)
 
 ---
 
